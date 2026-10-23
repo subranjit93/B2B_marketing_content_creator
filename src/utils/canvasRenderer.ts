@@ -452,7 +452,7 @@ export async function renderPosterToCanvas(
   // Bottom trust footer in Light Blue
   ctx.font = '700 12px "Space Mono", monospace';
   ctx.fillStyle = '#93C5FD';
-  const companyTitle = (config.distributorCompanyName || 'AUTHORIZED DISTRIBUTOR').toUpperCase();
+  const companyTitle = (config.distributorCompanyName || 'SAINATH ELECTROCARE').toUpperCase();
   ctx.fillText(`${companyTitle} · PEAVEY COMMERCIAL AUDIO (ODISHA)`, 90, footerY + 188);
   ctx.restore();
 }

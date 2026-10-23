@@ -41,12 +41,21 @@ export default function App() {
     }
   });
 
-  // User Company Name (Editable)
+  // User Company Name (Editable, defaults to Sainath Electrocare)
   const [companyName, setCompanyName] = useState<string>(() => {
     try {
-      return localStorage.getItem(COMPANY_NAME_KEY) || 'ODISHA PRO AUDIO LABS';
+      const saved = localStorage.getItem(COMPANY_NAME_KEY);
+      if (
+        saved &&
+        !saved.toLowerCase().includes('odisha pro') &&
+        !saved.toLowerCase().includes('odisha proaudio')
+      ) {
+        return saved;
+      }
+      localStorage.setItem(COMPANY_NAME_KEY, 'Sainath Electrocare');
+      return 'Sainath Electrocare';
     } catch (e) {
-      return 'ODISHA PRO AUDIO LABS';
+      return 'Sainath Electrocare';
     }
   });
 
