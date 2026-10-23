@@ -1,0 +1,8 @@
+{
+  "name": "Peavey Pro Audio Poster Studio (Odisha)",
+  "description": "Daily automated marketing poster creator & WhatsApp distribution engine for Peavey pro audio equipment in Odisha, tailored for System Integrators.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
